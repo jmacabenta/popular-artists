@@ -1,0 +1,89 @@
+.popular-artists-page {
+    .popular-artists-content {
+        .popular-artists-header {
+            padding: 25px 15px;
+            text-align: center;
+            background: #f1f1f1;
+
+            h1 {
+                margin: 0;
+                color: #111827;
+            }
+        }
+
+        .loading-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+
+            .loading-text {
+                text-align: center;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 20px;
+            }
+        }
+
+        .artists-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            margin: 0 auto;
+            padding: 50px 0;
+
+            @media screen and (max-width: 768px) {
+                justify-content: center;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    .artist-photo {
+                        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+                    }
+
+                    .view-btn {
+                        background: #fff;
+                        color: #4AC7F3;
+                        transition: 0.3s all ease;
+                    }
+                }
+            }
+
+            .artist-box {
+                margin: 0 10px 50px;
+                max-width: 230px;
+                text-align: center;
+
+                .artist-photo {
+                    width: 100%;
+                    height: auto;
+                    border: 1px solid #111827;
+                }
+
+                .artist-name {
+                    margin: 10px 0 0;
+                    color: #111827;
+                    transition: 0.3s all ease;
+                }
+
+                .view-btn {
+                    margin: 10px 0 0;
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 8px 10px;
+                    background: #4AC7F3;
+                    display: inline-block;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    transition: 0.3s all ease;
+                    border: 1px solid #4AC7F3;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.artist-page {
+    .artist-content {
+        .loading-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+
+            .loading-text {
+                text-align: center;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 20px;
+            }
+        }
+
+        .artist-header {
+            padding: 40px 0;
+            background: #f1f1f1;
+
+            .artist-profile {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+
+        .back-text {
+            text-decoration: none;
+            color: #111827;
+            font-weight: 600;
+            font-size: 15px;
+            transition: 0.3s all ease;
+            padding: 8px 10px;
+            background: #4AC7F3;
+            color: #fff;
+            border-radius: 5px;
+            border: 1px solid #4AC7F3;
+
+            &:hover {
+                background: #fff;
+                color: #4AC7F3;
+                transition: 0.3s all ease;
+            }
+        }
+
+        .artist-bio {
+            margin-top: 40px;
+            text-align: center;
+
+            img {
+                max-width: 230px;
+                width: 100%;
+                height: auto;
+                border-radius: 100%;
+            }
+
+            h2 {
+                color: #111827;
+                margin: 10px 0 15px;
+            }
+
+            p {
+                color: #111827;
+                margin: 10px 0 0;
+            }
+        }
+
+        .artist-artworks {
+            width: 70%;
+            margin: 40px auto 0;
+
+            h2 {
+                text-decoration: underline;
+                margin: 0 0 40px;
+                color: #111827;
+                text-align: center;
+            }
+
+            .artworks-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                @media screen and (max-width: 768px) {
+                    justify-content: center;
+                }
+
+                .artwork-box {
+                    margin: 0 10px 40px;
+                    max-width: 230px;
+                    text-align: center;
+
+                    .artwork-image {
+                        width: 100%;
+                        height: auto;
+                        border: 1px solid #111827;
+                    }
+
+                    .artwork-title {
+                        margin: 10px 0 0;
+                        color: #111827;
+                        transition: 0.3s all ease;
+                    }
+                }
+            }
+        }
+    }
+}
